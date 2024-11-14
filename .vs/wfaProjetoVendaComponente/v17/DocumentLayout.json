@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|c:\\users\\vhcmo\\source\\repos\\wfaprojetovendacomponente\\wfaprojetovendacomponente\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|solutionrelative:wfaprojetovendacomponente\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|c:\\users\\vhcmo\\source\\repos\\wfaprojetovendacomponente\\wfaprojetovendacomponente\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|solutionrelative:wfaprojetovendacomponente\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|c:\\users\\vhcmo\\source\\repos\\wfaprojetovendacomponente\\wfaprojetovendacomponente\\conexaostring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|solutionrelative:wfaprojetovendacomponente\\conexaostring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|c:\\users\\vhcmo\\source\\repos\\wfaprojetovendacomponente\\wfaprojetovendacomponente\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|solutionrelative:wfaprojetovendacomponente\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|c:\\users\\vhcmo\\source\\repos\\wfaprojetovendacomponente\\wfaprojetovendacomponente\\componentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|solutionrelative:wfaprojetovendacomponente\\componentes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|c:\\users\\vhcmo\\source\\repos\\wfaprojetovendacomponente\\wfaprojetovendacomponente\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|solutionrelative:wfaprojetovendacomponente\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|c:\\users\\vhcmo\\source\\repos\\wfaprojetovendacomponente\\wfaprojetovendacomponente\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60013595-8C54-4CB6-A7C1-469140D77825}|wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj|solutionrelative:wfaprojetovendacomponente\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Vhcmo\\OneDrive\\\u00C1rea de Trabalho\\POO Prova 2\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 103,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConexaoString.cs",
+              "DocumentMoniker": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\ConexaoString.cs",
+              "RelativeDocumentMoniker": "wfaProjetoVendaComponente\\ConexaoString.cs",
+              "ToolTip": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\ConexaoString.cs",
+              "RelativeToolTip": "wfaProjetoVendaComponente\\ConexaoString.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:14:27.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vendas.cs",
+              "DocumentMoniker": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\Vendas.cs",
+              "RelativeDocumentMoniker": "wfaProjetoVendaComponente\\Vendas.cs",
+              "ToolTip": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\Vendas.cs",
+              "RelativeToolTip": "wfaProjetoVendaComponente\\Vendas.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T17:05:00.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Componentes.cs",
+              "DocumentMoniker": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\Componentes.cs",
+              "RelativeDocumentMoniker": "wfaProjetoVendaComponente\\Componentes.cs",
+              "ToolTip": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\Componentes.cs",
+              "RelativeToolTip": "wfaProjetoVendaComponente\\Componentes.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:27:18.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\Clientes.cs",
+              "RelativeDocumentMoniker": "wfaProjetoVendaComponente\\Clientes.cs",
+              "ToolTip": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\Clientes.cs",
+              "RelativeToolTip": "wfaProjetoVendaComponente\\Clientes.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:21:19.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\Form1.cs",
+              "RelativeDocumentMoniker": "wfaProjetoVendaComponente\\Form1.cs",
+              "ToolTip": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\Form1.cs",
+              "RelativeToolTip": "wfaProjetoVendaComponente\\Form1.cs",
+              "ViewState": "AgIAAI0BAAAAAAAAAAAQwAQCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T01:13:21.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "wfaProjetoVendaComponente\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\Form1.Designer.cs",
+              "RelativeToolTip": "wfaProjetoVendaComponente\\Form1.Designer.cs",
+              "ViewState": "AgIAADcBAAAAAAAAAAArwEYBAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T01:12:31.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Vhcmo\\OneDrive\\\u00C1rea de Trabalho\\POO Prova 2\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive\\\u00C1rea de Trabalho\\POO Prova 2\\Program.cs",
+              "ToolTip": "C:\\Users\\Vhcmo\\OneDrive\\\u00C1rea de Trabalho\\POO Prova 2\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\OneDrive\\\u00C1rea de Trabalho\\POO Prova 2\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T21:25:36.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\Form1.cs",
+              "RelativeDocumentMoniker": "wfaProjetoVendaComponente\\Form1.cs",
+              "ToolTip": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\Form1.cs [Projeto]",
+              "RelativeToolTip": "wfaProjetoVendaComponente\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T16:19:35.002Z",
+              "EditorCaption": " [Projeto]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

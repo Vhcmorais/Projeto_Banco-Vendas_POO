@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "xLM4Ud2Bhss=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Vhcmo\\source\\repos\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente\\wfaProjetoVendaComponente.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vhcmo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Vhcmo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Vhcmo\\.nuget\\packages\\npgsql\\8.0.5\\npgsql.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
