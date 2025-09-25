@@ -34,206 +34,66 @@ Este projeto demonstra como construir uma aplicação C# robusta, organizada e c
 ```bash
 📁 .vs/
 📁 wfaProjetoVendaComponente/
-│  ├─ components/
-│  └─ pages/
-├─ 📁 uploads/
-├─ 📄 server.js
-├─ 📄 users.db
-└─ 📄 README.md
+📝 wfaProjetoVendaComponente.sln/
 ```
 
 ---
 
 ## 🧑🏽‍💻 Criação do Projeto
 
-1. Criamos o projeto React:
-```bash
-npx create-react-app vestlink
-cd vestlink
-npm start
-```
-2. Instalamos as bibliotecas necessárias:
-```bash
-npm install react-bootstrap bootstrap
-npm install react-router-dom
-npm install express
-...
-```
+1. Diagrama de funcionalidades:
+
+![Diagrama](imgs/diagrama.png)
 
 ---
 
 ## 🗂️ Banco de Dados
 
-O projeto utiliza SQLite no desenvolvimento local, por ser leve e não exigir configuração de servidor.
+O projeto utiliza **PostgreSQL** para armazenar e gerenciar informações sobre clientes, componentes e vendas.
 
-Ele armazena dados como usuários, postagens, perfis e materiais.
+Ele mantém dados essenciais para o controle do sistema de vendas, como cadastros de clientes, registros de componentes disponíveis e histórico de vendas realizadas.
 
 ### 📌 Estrutura de Dados
 
-As principais informações armazenadas localmente incluem:
+As principais informações armazenadas incluem:
 
-- **Usuários:** dados de cadastro, login e perfil
-- **Postagens:** resumos, materiais e comentários
-- **Perfis:** informações adicionais de cada estudante (nome, biografia, foto)
-- **Materiais:** arquivos e conteúdos vinculados às áreas de estudo
+- **Clientes**: dados de cadastro, como nome, e-mail, telefone e endereço  
+- **Componentes**: informações de cada peça, como nome, categoria, quantidade em estoque e preço  
+- **Vendas**: histórico de vendas associando clientes e componentes, com data, quantidade e valor total  
 
-### ⚙️ Configuração
+## ⚙️ Configuração
 
-1. Instalação do pacote SQLite3:
-   ```bash
-   npm install sqlite3
-   ```
-2. Criação do arquivo server.js para inicializar o banco:
-```javascript
-// Importando os módulos necessários:
+### Instalação do driver PostgreSQL para C#
+```powershell
+Install-Package Npgsql
+```
 
-const express = require(\'express\');
-const sqlite3 = require(\'sqlite3\').verbose();
-...
+### Implementando tabelas
+```
+using Npgsql;
 
-// Cria a aplicação Express e define porta de conexão:
+string connectionString = "Host=xxx;Username=xxx;Password=xxx;Database=xxx";
+using var conn = new NpgsqlConnection(connectionString);
+conn.Open();
+Console.WriteLine("Conectado ao banco de dados PostgreSQL.");
 
-const app = express();
-const PORT = 3001;
-...
+using var cmd = new NpgsqlCommand(@"
 
-// Cria a tabela \
-
-
-"users" caso ainda não exista:
-
-const db = new sqlite3.Database(\'./users.db\', (err) => {
-  if (err) {
-    console.error(\'Erro ao abrir o banco de dados:\', err.message);
-  } else {
-    console.log(\'Conectado ao banco de dados SQLite.\');
-    db.run(`CREATE TABLE IF NOT EXISTS users (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      nome TEXT NOT NULL,
-      email TEXT UNIQUE NOT NULL,
-      senha TEXT NOT NULL,
-      profilePicturePath TEXT,
-      bio TEXT 
-    )`, (err) => {
-      if (err) {
-        console.error(\'Erro ao criar a tabela de usuários:\', err.message);
-      }
-    });
-
-...
+CREATE TABLE IF NOT EXISTS clientes (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    telefone VARCHAR(20),
+    endereco TEXT
+)", conn);
+cmd.ExecuteNonQuery();
 ```
 
 ---
 
 ## 💻 Desenvolvimento Front-end
 
-O front-end do **VestLink** foi desenvolvido utilizando **React**, com estilização via **Bootstrap/React-Bootstrap** e CSS customizado.
----
----
-### ⚛️ React
-
-- React é uma **biblioteca JavaScript** para criar interfaces de usuário de forma **reativa e componentizada**.
-- Cada parte da página (botões, formulários, cards de post, navbar) é construída como um **componente reutilizável**.
-- Exemplo de criação de componente:
-
-```javascript
-function CardPost({ title, description }) {
-  return (
-    <div className="card p-3 m-2">
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  );
-}
-```
-...
----
-### 🟦 Bootstrap / React-Bootstrap
-
-- **Bootstrap** é um framework CSS que fornece **estilos prontos e componentes responsivos**, como grids, botões, formulários, cards e navbar.
-- **React-Bootstrap** adapta esses componentes para serem usados **como componentes React**, mantendo a reatividade da aplicação.
-- Benefícios:
-  - Layout responsivo automaticamente (desktop, tablet, mobile)
-  - Componentes prontos que aceleram o desenvolvimento
-  - Integração fácil com React
-
-**Exemplo de Card com React-Bootstrap:**
-```jsx
-import Card from \'react-bootstrap/Card\';
-
-function CardPost({ title, description }) {
-  return (
-    <Card className="mb-3 shadow-sm">
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{description}</Card.Text>
-      </Card.Body>
-    </Card>
-  );
-}
-```
-
----
-
-## ⚙️ Desenvolvimento Back-end
-
-O back-end do **VestLink** foi desenvolvido com **Node.js** e **Express**, oferecendo uma API REST que se comunica com o banco de dados **SQLite** no ambiente local.
-
----
-
-### 🟢 Tecnologias e Funções
-
-- **Node.js**: ambiente de execução JavaScript no servidor
-- **Express**: framework para criar rotas e APIs de forma rápida e organizada
-- **SQLite**: banco de dados local para armazenamento de usuários, posts, favoritos e avaliações
-- **Multer**: middleware para upload de arquivos (materiais, imagens de capa e foto de perfil)
-- **CORS**: permite que o front-end acesse o back-end mesmo estando em portas diferentes
----
-### 🔄 Funcionalidades do Back-end
-
-1. **Cadastro e login de usuários**
-   - Senhas armazenadas de forma segura usando `bcrypt`
-   - Validação de campos obrigatórios e verificação de email único
-
-2. **Gestão de posts**
-   - Criação, listagem e exclusão de posts
-   - Upload de arquivos e imagens (materiais de estudo e capa)
-
-3. **Favoritos e avaliações**
-   - Usuários podem favoritar/desfavoritar posts
-   - Avaliações positivas ou negativas em cada post
-
-4. **Perfis de usuário**
-   - Visualização e atualização de biografia
-   - Upload de foto de perfil
-
-5. **Serviço de arquivos estáticos**
-   - Arquivos enviados são armazenados em `uploads/`
-   - Podem ser acessados via URL, ex.: `http://localhost:3001/uploads/nome-do-arquivo`
----
-### 📂 Estrutura do Back-end
-
-- `server.js` → arquivo principal do servidor Express
-- `uploads/` → pasta onde arquivos enviados são salvos
-- `users.db` → banco de dados SQLite local
-- Possíveis futuras pastas para melhor organização:
-  - `routes/` → rotas separadas por recurso (users, posts)
-  - `controllers/` → funções que implementam a lógica de cada rota
-  - `database/` → inicialização e configuração do SQLite
-
----
-### 🔄 Fluxo de Comunicação
-
-1. **Front-end React** envia requisições HTTP (GET, POST, PUT, DELETE) para o **Express**
-2. **Express** processa a requisição, executa queries no **SQLite** e retorna dados em JSON
-3. **Front-end** consome a resposta e atualiza a interface do usuário
----
-### ⚡ Exemplos de Rotas
-
-- `POST /register` → cadastrar usuário
-- `POST /login` → autenticar usuário
-- `POST /posts` → criar um novo post
-... 
+![Front_End](imgs/frontend.png)
 
 ---
 
@@ -241,31 +101,17 @@ O back-end do **VestLink** foi desenvolvido com **Node.js** e **Express**, ofere
 
 Aqui estão algumas telas do projeto **VestLink**:
 
-**Tela de Login**
-![Tela de Login](./demo/imagens/tela_login.png)
+**Tela de Clientes**
+![Tela de Clientes](.imgs/clientes.png)
 
-**Feed de Postagens**
-![Feed de Postagens](./demo/imagens/tela_post.png)
+**Tela de Componentes**
+![Tela de Componentes](.imgs/componentes.png)
 
-**Perfil do Usuário**
-![Página de Perfil](./demo/imagens/tela_perfil.png)
-
-**Para assistir uma demonstração do sistema, clique no link:**
-[Demonstração - VestLink](https://drive.google.com/file/d/1dILKk8BLbPsa_TGaGSdYresE0osS31Ms/view?usp=sharing)
+**Tela de Vendas**
+![Tela de Vendas](.imgs/vendas.png)
 
 ---
 
-## 🙏 Agradecimentos
-
-Gostaria de agradecer aos meus colegas que contribuíram para este projeto!  
-Seus esforços, ideias e dedicação tornaram este projeto possível.  
-
-### Contribuidores
-- [Vitor Henrique](https://github.com/Vhcmorais)  
-- [Adilson José](https://github.com/OutroContribuidor)  
-- [Bianca Marques](https://github.com/MaisUm)
-- [Gabriel Alves](https://github.com/gabriel-a-f)
-
 <div align="center">
-  <img src="./demo/imagens/foto_readme.jpg" width="300" />
+  <img src=".imgs/postgre.png" width="300" />
 </div>
