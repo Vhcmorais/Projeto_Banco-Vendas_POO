@@ -101,18 +101,15 @@ cmd.ExecuteNonQuery();
 
 Aqui estão algumas telas do projeto **VestLink**:
 
-**Tela de Clientes**
 ![](imgs/clientes.png)
 
-**Tela de Componentes**
 ![](imgs/componentes.png)
 
-**Tela de Vendas**
 ![](imgs/vendas.png)
 
 ---
 
-## Considerações
+## ✍🏼 Considerações
 
 Desenvolver esse projeto foi desafiador, mas extremamente enriquecedor. Permitindo aplicar conceitos de **Programação Orientada a Objetos**, integração com **banco de dados PostgreSQL** e desenvolvimento de funcionalidades reais de um sistema de vendas.  
 
