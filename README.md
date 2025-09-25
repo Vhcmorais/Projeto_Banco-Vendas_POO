@@ -32,12 +32,8 @@ Este projeto demonstra como construir uma aplicação C# robusta, organizada e c
 ## 📂 Estrutura do Repositório
 
 ```bash
-📁 vestlink/
-├─ 📁 public/
-│  ├─ logo.png
-│  ├─ favicon.ico
-│  └─ index.html
-├─ 📁 src/
+📁 .vs/
+📁 wfaProjetoVendaComponente/
 │  ├─ components/
 │  └─ pages/
 ├─ 📁 uploads/
