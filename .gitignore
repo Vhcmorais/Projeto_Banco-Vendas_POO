@@ -1,0 +1,18 @@
+# Pastas temporárias do Visual Studio
+.vs/
+bin/
+obj/
+
+# Arquivos de configuração do usuário
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs e cache
+*.log
+*.tlog
+
+# Configurações locais do banco de dados (exemplo PostgreSQL)
+*.mdf
+*.ldf
