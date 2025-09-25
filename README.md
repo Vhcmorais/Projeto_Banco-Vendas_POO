@@ -99,7 +99,7 @@ cmd.ExecuteNonQuery();
 
 ## 📊 Resultados Obtidos
 
-Aqui estão algumas telas do projeto **VestLink**:
+Aqui estão algumas telas do projeto **Sistema Programação Orientada a Objetos**:
 
 ![](imgs/clientes.png)
 
